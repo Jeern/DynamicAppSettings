@@ -25,7 +25,7 @@
   // Limit the package generation to a specific build configuration.
   // Leaving this value empty will always trigger package generation
   // Note: config parameter was introduced in release 1.0.7
-  "Configuration": "Release",
+  "Configuration": "",
 
   // Specifies one or more wildcard patterns to exclude when creating a package.
   "Exclude": "",
