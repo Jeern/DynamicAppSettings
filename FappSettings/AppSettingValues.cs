@@ -2,7 +2,7 @@
 using System.Configuration;
 using System.Dynamic;
 
-namespace DynamicAppSettings
+namespace FappSettings
 {
     internal class AppSettingValues : DynamicObject
     {

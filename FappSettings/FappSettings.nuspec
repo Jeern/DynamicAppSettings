@@ -12,7 +12,7 @@
 		<id>$id$</id>
 		<!-- This will use the AssemblyVersion -->
 		<version>$version$</version>
-		<title>DynamicAppSettings</title>
+		<title>FappSettings</title>
 		<description>Provides a dynamic API for accessing AppSettings in app.config and web.config files</description>
 		<authors>Jesper Niedermann</authors>
 		<owners>Jesper Niedermann</owners>

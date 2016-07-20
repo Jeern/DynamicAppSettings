@@ -1,4 +1,4 @@
-DynamicAppSettings provides an easy way to access the web.config or app.config AppSettings
+FappSettings provides an easy way to access the web.config or app.config AppSettings
 
 ## Usage
 

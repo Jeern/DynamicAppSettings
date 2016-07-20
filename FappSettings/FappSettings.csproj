@@ -7,8 +7,8 @@
     <ProjectGuid>{1A6D31A0-A3D8-4DAA-98DE-CD93D54BB879}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DynamicAppSettings</RootNamespace>
-    <AssemblyName>DynamicAppSettings</AssemblyName>
+    <RootNamespace>FappSettings</RootNamespace>
+    <AssemblyName>FappSettings</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -49,7 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DynamicAppSettings.nuspec" />
+    <None Include="FappSettings.nuspec" />
     <None Include="package.builder.json" />
     <None Include="packages.config" />
   </ItemGroup>
