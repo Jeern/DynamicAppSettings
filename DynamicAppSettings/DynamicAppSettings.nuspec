@@ -12,13 +12,13 @@
 		<id>$id$</id>
 		<!-- This will use the AssemblyVersion -->
 		<version>$version$</version>
-		<title>Your title goes here</title>
-		<description>Your description goes here</description>
-		<authors>You</authors>
-		<owners>You</owners>
+		<title>DynamicAppSettings</title>
+		<description>Provides a dynamic API for accessing AppSettings in app.config and web.config files</description>
+		<authors>Jesper Niedermann</authors>
+		<owners>Jesper Niedermann</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<releaseNotes>Initial release.</releaseNotes>
-		<copyright>Copyright 2015</copyright>
-		<tags>ANY</tags>
+		<copyright>Copyright 2016</copyright>
+		<tags>AppSettings app.config web.config</tags>
 	</metadata>
 </package>
