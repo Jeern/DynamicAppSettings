@@ -20,5 +20,7 @@
 		<releaseNotes>Initial release.</releaseNotes>
 		<copyright>Copyright 2016</copyright>
 		<tags>AppSettings app.config web.config</tags>
+    <projectUrl>https://github.com/Jeern/FappSettings</projectUrl>
+    <licenseUrl>https://github.com/Jeern/FappSettings/blob/master/LICENSE</licenseUrl>
 	</metadata>
 </package>
