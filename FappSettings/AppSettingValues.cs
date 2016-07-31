@@ -77,7 +77,7 @@ namespace FappSettings
             }
             else
             {
-                throw new ConfigurationErrorsException($"Dynamic AppSettings does not support values of type {_propertyType.Name}");
+                throw new ConfigurationErrorsException($"FappSettings does not support values of type {_propertyType.Name}");
             }
             return true;
         }

@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("FappSettings")]
-[assembly: AssemblyDescription("Provides support for reading AppSettings using a dynamic type")]
+[assembly: AssemblyDescription("Provides support for reading AppSettings and connectionstrings using a dynamic type")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Jesper Niedermann")]
 [assembly: AssemblyProduct("FappSettings")]
