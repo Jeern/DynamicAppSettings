@@ -82,7 +82,7 @@ namespace FappSettings
             return true;
         }
 
-        public string TypeErrorText(string key)
+        private string TypeErrorText(string key)
         {
             return $"AppSettings key: {key} must be of type: {_propertyType.Name}";
         }
