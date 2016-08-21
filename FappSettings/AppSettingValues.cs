@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.Dynamic;
+using System.Globalization;
 
 namespace FappSettings
 {
@@ -32,42 +33,42 @@ namespace FappSettings
             else if (_propertyType == typeof(int))
             {
                 int specificResult;
-                if (!int.TryParse(valueString, out specificResult))
+                if (!int.TryParse(valueString, NumberStyles.Any, CultureInfo.InvariantCulture, out specificResult))
                     throw new ConfigurationErrorsException(TypeErrorText(propertyName));
                 result = specificResult;
             }
             else if (_propertyType == typeof(double))
             {
                 double specificResult;
-                if (!double.TryParse(valueString, out specificResult))
+                if (!double.TryParse(valueString, NumberStyles.Any, CultureInfo.InvariantCulture, out specificResult))
                     throw new ConfigurationErrorsException(TypeErrorText(propertyName));
                 result = specificResult;
             }
             else if (_propertyType == typeof(float))
             {
                 float specificResult;
-                if (!float.TryParse(valueString, out specificResult))
+                if (!float.TryParse(valueString, NumberStyles.Any, CultureInfo.InvariantCulture, out specificResult))
                     throw new ConfigurationErrorsException(TypeErrorText(propertyName));
                 result = specificResult;
             }
             else if (_propertyType == typeof(decimal))
             {
                 decimal specificResult;
-                if (!decimal.TryParse(valueString, out specificResult))
+                if (!decimal.TryParse(valueString, NumberStyles.Any, CultureInfo.InvariantCulture, out specificResult))
                     throw new ConfigurationErrorsException(TypeErrorText(propertyName));
                 result = specificResult;
             }
             else if (_propertyType == typeof(DateTime))
             {
                 DateTime specificResult;
-                if (!DateTime.TryParse(valueString, out specificResult))
+                if (!DateTime.TryParse(valueString, CultureInfo.InvariantCulture, DateTimeStyles.None, out specificResult))
                     throw new ConfigurationErrorsException(TypeErrorText(propertyName));
                 result = specificResult;
             }
             else if (_propertyType == typeof(TimeSpan))
             {
                 TimeSpan specificResult;
-                if (!TimeSpan.TryParse(valueString, out specificResult))
+                if (!TimeSpan.TryParse(valueString, CultureInfo.InvariantCulture, out specificResult))
                     throw new ConfigurationErrorsException(TypeErrorText(propertyName));
                 result = specificResult;
             }
