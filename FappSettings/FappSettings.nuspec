@@ -17,7 +17,7 @@
 		<authors>Jesper Niedermann</authors>
 		<owners>Jesper Niedermann</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<releaseNotes>Initial release.</releaseNotes>
+		<releaseNotes>Objects can be parsed.</releaseNotes>
 		<copyright>Copyright 2016</copyright>
 		<tags>AppSettings app.config web.config</tags>
     <projectUrl>https://github.com/Jeern/FappSettings</projectUrl>

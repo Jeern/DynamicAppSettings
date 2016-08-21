@@ -2,24 +2,25 @@
 
 namespace FappSettings.Tests
 {
-    public class Person : IFappConfiguration<Person>
+    public class Person : FappConfiguration
     {
-        public Person(string name, int age)
-        {
-            Name = name;
-            Age = age;
-        }
+        public string Name { get; set; }
+        public int Age { get; set; }
 
-        public string Name { get; }
-        public int Age { get; }
-
-        public string Key => Name;
-        
-        public Person Parse(string configuration)
+        public override void Populate(string configuration)
         {
             var splitted = configuration.Split(',');
-            return new Person(splitted[0], Convert.ToInt32(splitted[1]));
+            Name = splitted[0];
+            Age = Convert.ToInt32(splitted[1]);
         }
-        
+
+        public override bool Equals(object obj)
+        {
+            var p = obj as Person;
+            if (p == null)
+                return false;
+
+            return Name == p.Name && Age == p.Age;
+        }
     }
 }

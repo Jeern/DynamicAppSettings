@@ -48,7 +48,7 @@
     <Compile Include="ConnectionStringValues.cs" />
     <Compile Include="AppSettingValues.cs" />
     <Compile Include="Extensions.cs" />
-    <Compile Include="IFappConfiguration.cs" />
+    <Compile Include="FappConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

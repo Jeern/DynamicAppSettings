@@ -25,11 +25,11 @@ namespace FappSettings
             if (_propertyType == typeof(bool))
             {
                 bool specificResult;
-                if(!bool.TryParse(valueString, out specificResult))
+                if (!bool.TryParse(valueString, out specificResult))
                     throw new ConfigurationErrorsException(TypeErrorText(propertyName));
                 result = specificResult;
             }
-            else if(_propertyType == typeof(int))
+            else if (_propertyType == typeof(int))
             {
                 int specificResult;
                 if (!int.TryParse(valueString, out specificResult))
@@ -77,7 +77,16 @@ namespace FappSettings
             }
             else
             {
-                throw new ConfigurationErrorsException($"FappSettings does not support values of type {_propertyType.Name}");
+                if (typeof(FappConfiguration).IsAssignableFrom(_propertyType))
+                {
+                    var instance = Activator.CreateInstance(_propertyType, true);
+                    _propertyType.GetMethod("DoPopulate").Invoke(instance, new object[] { propertyName, valueString });
+                    result = instance;
+                }
+                else
+                {
+                    throw new ConfigurationErrorsException($"FappSettings does not support values of type {_propertyType.Name}");
+                }
             }
             return true;
         }
