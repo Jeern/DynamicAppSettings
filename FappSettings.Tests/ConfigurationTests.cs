@@ -51,5 +51,10 @@ namespace FappSettings.Tests
         {
             Assert.AreEqual(new Person() { Name = "John", Age = 32 }, AppSettings<Person>.ValueOf(a => a.TestPerson));
         }
+        [Test]
+        public void Can_Load_TestEnum()
+        {
+            Assert.AreEqual(TestEnum.SecondValue, AppSettings<TestEnum>.ValueOf(a => a.TestEnum));
+        }
     }
 }

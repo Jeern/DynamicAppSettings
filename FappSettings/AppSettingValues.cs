@@ -72,6 +72,17 @@ namespace FappSettings
                     throw new ConfigurationErrorsException(TypeErrorText(propertyName));
                 result = specificResult;
             }
+            else if (_propertyType.IsEnum)
+            {
+                try
+                {
+                    result = Enum.Parse(_propertyType, valueString);
+                }
+                catch(Exception ex)
+                {
+                    throw new ConfigurationErrorsException(TypeErrorText(propertyName), ex);
+                }
+            }
             else if (_propertyType == typeof(string))
             {
                 result = valueString;
